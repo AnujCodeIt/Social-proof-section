@@ -1,0 +1,171 @@
+:root {
+  /* Primary Colors */
+  --very-dark-pink: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  /* Netural Colors */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Font Weights */
+  --font-small: 400;
+  --font-medium: 500;
+  --font-large: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  width: auto;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "League Spartan";
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  width: 100rem;
+}
+
+.grid-col--2 {
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0;
+}
+
+.grid-col--3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2.4rem;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Top Grid */
+.product-info {
+  padding-right: 12rem;
+}
+
+.product-heading {
+  font-weight: var(--font-large);
+  color: var(--very-dark-pink);
+
+  font-size: 5rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.product-description {
+  color: var(--dark-grayish-magenta);
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+}
+
+.product-review {
+  margin: 2rem 0 2rem 2rem;
+}
+
+.star-img {
+}
+
+.star-icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.5rem 4.6rem 1.5rem 2.4rem;
+  background-color: hsla(333, 80%, 68%, 0.1);
+  border-radius: 5px;
+
+  margin-bottom: 1.8rem;
+
+  width: 45rem;
+}
+
+.product-rating:last-child {
+  margin-bottom: 0;
+}
+
+.person-rating {
+  font-weight: var(--font-large);
+  color: var(--very-dark-pink);
+}
+
+/* Bottom Grid */
+.testomoniol {
+  padding: 3.2rem 2.6rem;
+  margin: 2rem 0 0 0;
+
+  background-color: var(--very-dark-pink);
+
+  border-radius: 10px;
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.person-img {
+  display: block;
+
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.person-name {
+  color: var(--light-grayish-magenta);
+  font-weight: var(--font-medium);
+
+  margin-bottom: 0.5rem;
+}
+
+.person-status {
+  color: var(--soft-pink);
+  font-weight: var(--font-small);
+}
+
+.testomoniol-text {
+  color: var(--light-grayish-magenta);
+  line-height: 1.5;
+
+  font-weight: var(--font-small);
+}
+
+.margin-btm--small {
+  margin-top: 5rem;
+}
+
+.margin-btm--big {
+  margin-top: 8rem;
+}
+
+.margin-left-small {
+    margin-left: 4rem;
+}
+
+.margin-left-big {
+    margin-left: 8rem;
+}
