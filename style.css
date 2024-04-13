@@ -36,6 +36,12 @@ body {
 
   font-family: "League Spartan";
   font-size: 1.5rem;
+
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-size: 50%, 75%;
 }
 
 .grid {
@@ -163,9 +169,9 @@ body {
 }
 
 .margin-left-small {
-    margin-left: 4rem;
+  margin-left: 4rem;
 }
 
 .margin-left-big {
-    margin-left: 8rem;
+  margin-left: 8rem;
 }
